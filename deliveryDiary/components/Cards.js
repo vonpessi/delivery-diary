@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native'
 import DraggableFlatList from 'react-native-draggable-flatlist'
+import CallToActionBox from 'react-native-plus-button-box';
 
 class List extends Component {
     state = {
@@ -9,9 +10,8 @@ class List extends Component {
           key: `item-${index}`,
                 pickAddress: 'Pickup Address '+ index,
                 deliveryAddress: 'Delivery Address ' +index,
-          backgroundColor: '#D3D3D3',
         }))
-      }
+      };
      
       renderItem = ({ item, move, moveEnd }) => {
         return (
@@ -36,7 +36,6 @@ class List extends Component {
           </TouchableOpacity>
         )
       }
-     
       render() {
         return (
           <View style={{ flex: 1 }}>
@@ -46,6 +45,20 @@ class List extends Component {
               keyExtractor={(item) => `draggable-item-${item.key}`}
               scrollPercent={5}
               onMoveEnd={({ data }) => this.setState({ data })}
+            />
+             <CallToActionBox
+                actions={[
+                    {
+                        key: 'test',
+                        text: 'Test me',
+                        onPress: () => Alert.alert('Hello')
+                    },
+                    {
+                        key: 'test2',
+                        text: 'Test me again',
+                        onPress: () => Alert.alert('Hello to you too')
+                    }
+                ]}
             />
           </View>
         )
@@ -76,7 +89,4 @@ const styles = StyleSheet.create({
         borderRadius: 2 / 2,
         backgroundColor: 'red'
     }
-
-
-
 })
