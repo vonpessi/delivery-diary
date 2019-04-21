@@ -4891,6 +4891,11 @@ react-native-draggable-flatlist@^1.1.7:
   resolved "https://registry.yarnpkg.com/react-native-draggable-flatlist/-/react-native-draggable-flatlist-1.1.7.tgz#d15cd84cfa924c8733114cb9d3324a5bdbcd7ec2"
   integrity sha512-HBYYfbDbf7iRuEnSPUfh7iyGltwqLe3OokYI2d6aWY+OUEPEnd9bmTBu8LISQag+9W91/sqKsp8fRAZtnVIsNg==
 
+react-native-plus-button-box@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-plus-button-box/-/react-native-plus-button-box-1.1.0.tgz#c3208708270ad83038f1a45fcf4ba6e592fc56c0"
+  integrity sha512-imfOti1/ZdIXtT/90mEfSZCXGfsj63oNFxXahJ2usdqJLagofKrWKGwHJBdzOV3JnFTqjFyZ9NCPjiwtEUU2Dw==
+
 react-native@0.59.5:
   version "0.59.5"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.59.5.tgz#79500d2885a3dc83216715e1fc6effa878ad6ea9"
